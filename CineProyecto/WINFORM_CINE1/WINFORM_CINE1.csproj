@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73F4C56B-9980-41A9-BFFC-7FED05E9B9DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WINFORM_CINE1</RootNamespace>
+    <AssemblyName>WINFORM_CINE1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boleta.Designer.cs">
+      <DependentUpon>Boleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Cliente.cs" />
+    <Compile Include="Clases\Nodo.cs" />
+    <Compile Include="conexion del empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conexion del empleado.Designer.cs">
+      <DependentUpon>conexion del empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoHome.Designer.cs">
+      <DependentUpon>EmpleadoHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar Rutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar Rutas.Designer.cs">
+      <DependentUpon>Mostrar Rutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nodosrutaas.cs" />
+    <Compile Include="Precios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Precios.Designer.cs">
+      <DependentUpon>Precios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteHome.Designer.cs">
+      <DependentUpon>ClienteHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Butacas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Butacas.Designer.cs">
+      <DependentUpon>Butacas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Snacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Snacks.Designer.cs">
+      <DependentUpon>Snacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Boleta.resx">
+      <DependentUpon>Boleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conexion del empleado.resx">
+      <DependentUpon>conexion del empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoHome.resx">
+      <DependentUpon>EmpleadoHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar Rutas.resx">
+      <DependentUpon>Mostrar Rutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Precios.resx">
+      <DependentUpon>Precios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteHome.resx">
+      <DependentUpon>ClienteHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Butacas.resx">
+      <DependentUpon>Butacas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Snacks.resx">
+      <DependentUpon>Snacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMBO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEGRO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VERDE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ROJO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMBO2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adicionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocupado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disponible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Harry Potter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planeta del tesoro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rapidos y Furiosos.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venom.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
